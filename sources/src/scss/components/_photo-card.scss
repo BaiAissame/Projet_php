@@ -1,0 +1,42 @@
+@use "../partials/functions" as f;
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    background: white;
+    border-radius: f.rem(10);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: f.rem(16);
+    width: f.rem(250); 
+    max-width: 100%;
+    transition: transform 0.3s;
+    margin-bottom: 60px;
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: f.rem(6);
+    }
+
+    p {
+        margin-top: f.rem(10);
+        font-size: f.rem(14);
+        color: var(--grey-600);
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        margin-top: f.rem(10);
+    }
+}

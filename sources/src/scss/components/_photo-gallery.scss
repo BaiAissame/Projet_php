@@ -1,0 +1,12 @@
+@use "../partials/functions" as f;
+
+.photo-gallery {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    gap: f.rem(20); 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}

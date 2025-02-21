@@ -1,0 +1,28 @@
+@use "../partials/functions" as f;
+
+.card {
+  display: flex;
+  flex-direction: horizontal;
+  background: white;
+  border-radius: f.rem(10);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: f.rem(16);
+  margin-bottom: f.rem(20); 
+  transition: transform 0.3s;
+
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card__title {
+    font-size: f.rem(18);
+    font-weight: bold;
+    margin-bottom: f.rem(10);
+  }
+
+  .card__content {
+    font-size: f.rem(14);
+    color: var(--grey-600);
+  }
+}
